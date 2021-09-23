@@ -4,7 +4,8 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-const dist = "./dist/";
+// const dist = "./dist/";
+const dist = "C:/OpenServer/domains/Test";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -53,7 +54,7 @@ gulp.task("copy-assets", () => {
 gulp.task("watch", () => {
     browsersync.init({
 		server: "./dist/",
-		port: 4000,
+		port: 4001,
 		notify: true
     });
     
